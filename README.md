@@ -1,92 +1,158 @@
 # 💰 US Debt Tracker (Excel Project)
 
 ## 📊 Project Overview
-This project analyzes **historical and projected U.S. Publicly Held Debt** using Excel.  
-The dataset was cleaned, structured, and analyzed to reveal **trends in debt growth**, **seasonal fluctuations**, and **future projections**.  
+This project analyses **U.S. national debt data** using **Microsoft Excel**.  
+It explores how U.S. federal debt has evolved over time, identifies patterns and growth trends, and provides short-term forecasts of future debt levels.
 
-The project showcases Excel skills in:
-- Data cleaning and transformation  
-- Percentage change and trend calculations  
-- Pivot tables and chart visualization  
-- Forecasting and analytical storytelling  
+The project demonstrates strong Excel and data analysis skills in:
+- Data cleaning and preparation (handling formatting issues and missing values)
+- Exploratory analysis using formulas, pivot tables, and visualisations
+- Forecasting future debt using built-in Excel time-series tools
+- Data storytelling — turning raw data into clear insights about economic trends
 
 ---
 
-## 🧠 Scenario
-The dataset originally contained inconsistencies and missing values, which prevented straightforward analysis.  
-I was tasked with cleaning the data and answering key financial questions related to debt growth.
+## 🔧 Project Structure
+- **Scenario.xlsx** → Context, objectives, and analytical questions guiding the project  
+- **Raw Data.xlsx** → Unprocessed dataset containing U.S. debt figures over time  
+- **Cleaned Data.xlsx** → Cleaned version of the dataset, ready for analysis  
+- **Question 1.xlsx** → Identifying debt growth trends over the years  
+- **Question 2.xlsx** → Comparing annual changes and visualising fluctuations  
+- **Question 3.xlsx** → Forecasting U.S. debt from 2024–2027 using Excel’s FORECAST.ETS function  
+- **Final Outputs.xlsx** → Combined summary visualising total debt, trends, and future projections  
 
-📸 **Screenshot — Project Scenario:**  
+---
+
+## ❓ Key Questions & Findings
+
+### 1️⃣ Scenario and Project Context
+The project simulates working for the **U.S. Department of the Treasury**, tasked with analysing national debt trends and forecasting future debt levels.  
+The goal was to provide a clear view of how U.S. debt has grown, identify yearly changes, and produce visual forecasts to support policymaking.
+
+📂 File: `Scenario.xlsx`  
+📸 Screenshot:  
 ![Scenario](./screenshots/Scenario.png)
 
 ---
 
-## 🔧 Tasks Completed
-- Cleaned and standardized raw data  
-- Created calculated fields for year-on-year debt growth  
-- Built pivot tables to analyze seasonal and annual patterns  
-- Modeled **future projections** using historical averages  
-- Designed clear data visualizations for presentation  
+### 2️⃣ Raw Data – The Starting Point
+The raw dataset contained U.S. debt figures (in billions) listed chronologically. However, it suffered from:
+- Inconsistent number formatting (some using commas, others not)
+- Blank or missing entries for certain months
+- Mixed date formats (e.g., `01/2020` vs `2020`)
+
+Before cleaning, this data could not be effectively analysed or charted.
+
+📂 File: `Raw Data.xlsx`  
+📸 Screenshot:  
+![Raw Data](./screenshots/Raw_Data.png)
 
 ---
 
-## ❓ Key Questions Answered
+### 3️⃣ Cleaned Data – Preparing for Analysis
+Data cleaning involved:
+- Standardising date formats into a consistent “YYYY” structure  
+- Converting all numeric values into uniform number formats  
+- Removing duplicates and fixing gaps in the debt figures  
+- Creating a structured table suitable for formulas and pivot tables  
 
-### 1️⃣ What was the Yearly Debt Percentage Increase for each year compared to the previous year?
-- Calculated **annual percentage changes** using Excel formulas.  
-- Highlighted years with **significant spikes**, especially during economic downturns and stimulus periods.
+The cleaned dataset allowed clear trend analysis and forecasting to be performed accurately.
+
+📂 File: `Cleaned Data.xlsx`  
+📸 Screenshot:  
+![Cleaned Data](./screenshots/Cleaned_Data.png)
 
 ---
 
-### 2️⃣ Which months historically have seen the highest and lowest increases in Total Debt?
-- Used **pivot tables** to break down changes by month.  
-- Identified periods where debt growth was at its **highest** (e.g., fiscal adjustments, federal budget cycles).  
-- Highlighted **low-growth** months showing fiscal stability or reduced spending.
+### 4️⃣ Question 1 – How has U.S. national debt changed over time?
+The first analytical step visualised total U.S. debt by year.
+
+Key findings included:
+- A steady upward trend in total debt across the recorded period  
+- Notable accelerations in debt growth around major events such as the **2008 financial crisis** and the **2020 pandemic**  
+- The average annual increase in total U.S. debt showed a consistent upward slope, confirming sustained fiscal expansion  
+
+📂 File: `Question 1.xlsx`  
+📸 Screenshot:  
+![Question 1](./screenshots/Question_1.png)
 
 ---
 
-### 3️⃣ What is the projected growth of publicly held debt in the next few years?
-- Built a simple **trend-based projection model** using average historical growth rates.  
-- Projected consistent increases, aligning with recent economic trends.
+### 5️⃣ Question 2 – What are the year-to-year changes in debt levels?
+The second analysis calculated **year-on-year differences** to understand the pace of change.  
+Using Excel formulas, a new column computed:
 
-📸 **Screenshot — Final Output:**  
+> `Annual Change = Current Year Debt – Previous Year Debt`
+
+This highlighted volatility in borrowing.
+
+Findings showed:
+- Sharp jumps in debt during **major stimulus periods**
+- Slower growth in fiscally stable years
+- Clear correlation between macroeconomic events and debt expansion
+
+📂 File: `Question 2.xlsx`  
+📸 Screenshot:  
+![Question 2](./screenshots/Question_2.png)
+
+---
+
+### 6️⃣ Question 3 – What will U.S. debt look like in the next few years?
+In the final analytical stage, Excel’s **FORECAST.ETS** function was used to project U.S. debt from **2024 to 2027**.  
+This time-series function predicts future values based on historical data, considering patterns and trends.
+
+Steps included:
+- Selecting the historical years as the timeline array  
+- Choosing total debt as the known values array  
+- Setting the forecast period to 2024–2027  
+- Visualising the results through a line chart combining historical and forecasted values  
+
+Findings showed:
+- The model predicts a **continued upward trajectory** in debt levels  
+- Forecasts indicate potential total debt surpassing all previous peaks  
+- The projection reinforces long-term sustainability concerns if growth continues unchecked  
+
+📂 File: `Question 3.xlsx`  
+📸 Screenshot:  
+![Question 3](./screenshots/Question_3.png)
+
+---
+
+### 7️⃣ Final Outputs – Summary Dashboard
+All findings were consolidated into a **visual summary dashboard** showing:
+- Historical trend lines  
+- Year-on-year changes  
+- Forecasted debt figures (2024–2027)  
+
+This provided a complete overview of how U.S. debt evolved, what drove changes, and where it might head next.
+
+📂 File: `Final Outputs.xlsx`  
+📸 Screenshot:  
 ![Final Output](./screenshots/Final_Output.png)
 
 ---
 
 ## 🚀 Key Insights
-- **1997–2007:** Debt increased by **~$1 trillion**.  
-- **2008–2019:** Sharp rise from **$6 trillion → $17 trillion**, reflecting recession and recovery policies.  
-- **2020–2022:** Further increase from **$21.5 trillion → $25 trillion** driven by pandemic-related spending.  
-- **2023–2027 (projection):** Expected rise from **$26 trillion → $33 trillion** based on historical trends.
-
-📈 *Publicly held debt continues to grow steadily and remains a central factor in U.S. fiscal policy discussions.*
-
----
-
-## 📂 Repository Contents
-- `US_Debt_Tracker_Project.xlsx` → Cleaned dataset, formulas, and visualizations  
-- `screenshots/Scenario.png` → Context overview  
-- `screenshots/Final_Output.png` → Final dashboard of analysis  
+- U.S. national debt continues to rise steadily, driven by borrowing and recurring fiscal deficits  
+- Major events like **recessions** and **pandemics** cause pronounced spikes in debt accumulation  
+- Forecasting confirms the trend will **likely continue upward** over the next several years  
+- Excel’s analytical tools enable effective data-driven storytelling for economic policy  
 
 ---
 
 ## 🛠️ Tools Used
-- **Microsoft Excel** (data cleaning, analysis, visualization)  
-- **Pivot Tables, Conditional Formatting, Trend Analysis**  
-- **GitHub** (version control and project sharing)  
+- **Microsoft Excel** – data cleaning, analysis, pivot tables, and forecasting  
+- **FORECAST.ETS** – time-series debt projection  
+- **GitHub** – version control, portfolio presentation, and documentation  
 
 ---
 
 ## 📌 How to Use
-1. Clone this repository or download the Excel file.  
-2. Open `US_Debt_Tracker_Project.xlsx` in **Excel** or **Google Sheets**.  
-3. View the `Findings` tab for key trends and insights.  
-4. Explore the `screenshots` folder for visual references.  
+1. Clone this repository or download the files  
+2. Open `.xlsx` files in **Microsoft Excel**  
+3. Review in sequence: `Scenario → Raw → Cleaned → Q1–Q3 → Final Outputs`  
+4. View the `/screenshots` folder for quick visual summaries  
 
 ---
 
-✍️ *This project was built as part of my data analysis portfolio to demonstrate Excel-based data cleaning, financial trend analysis, and visualization skills.*
-
----
-
+✍️ *This project is part of my data analysis portfolio, showcasing Excel-based time-series analysis, data cleaning, and forecasting using real-world economic data.*
