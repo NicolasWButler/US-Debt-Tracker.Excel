@@ -18,7 +18,7 @@ The project demonstrates strong Excel and data analysis skills in:
 - **Raw Data.xlsx** → Unprocessed dataset containing U.S. debt figures over time  
 - **Cleaned Data.xlsx** → Cleaned version of the dataset, ready for analysis  
 - **Question 1.xlsx** → Identifying debt growth trends over the years  
-- **Question 2.xlsx** → Comparing annual changes and visualising fluctuations  
+- **Question 2.xlsx** → Comparing monthly debt changes and identifying peaks/lows  
 - **Question 3.xlsx** → Forecasting U.S. debt from 2024–2027 using Excel’s FORECAST.ETS function  
 - **Final Outputs.xlsx** → Combined summary visualising total debt, trends, and future projections  
 
@@ -79,15 +79,20 @@ The first analytical step visualised total U.S. debt by year.
 
 ---
 
-### 5️⃣ Question 2 – What are the year-to-year changes in debt levels?
-The second analysis calculated year-on-year differences to understand the pace of change.  
-Using Excel formulas, a new column computed:  
-**Annual Change = Current Year Debt – Previous Year Debt**, highlighting volatility in borrowing.  
+### 5️⃣ Question 2 – Which months historically have seen the highest or lowest increases in total debt?
+
+This analysis examined **monthly fluctuations in total U.S. debt** to identify when borrowing tends to surge or stabilise.  
+Using Excel formulas, a new column calculated:  
+**Monthly Change = Current Month Debt – Previous Month Debt**, revealing patterns in how debt evolves across the year.  
 
 **Findings showed:**
-- Sharp jumps in debt during major stimulus periods  
-- Slower growth in fiscally stable years  
-- Clear correlation between macroeconomic events and debt expansion  
+- The **highest debt increases** historically occurred during **January, February, November, and December**.  
+- The **lowest increases** were observed during **April, May, June, and July**.  
+- These trends suggest a clear **seasonal pattern** in government borrowing and public spending.  
+
+**Interpretation:**  
+The high-debt months coincide with major U.S. holidays such as **Thanksgiving and Christmas**, when spending and economic activity typically surge.  
+Conversely, the lower-debt months align with the **summer period**, when fewer national events occur and borrowing demand is reduced.  
 
 📂 File: `Question 2.xlsx`  
 📸 Screenshot:  
